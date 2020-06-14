@@ -1,5 +1,10 @@
 ### Executable builder for osu!
 
-### Old Steps
-export DOTNET_CLI_HOME=/home
-dotnet publish -c Release --self-contained -r linux-x64 -o /osu osu.Desktop
+Command to run to start the game (from within the working/game directory):
+```sh -c "export LD_LIBRARY_PATH=$(pwd) && ./osu!"```
+
+To run the builder:
+```make```
+
+To remove repo/built files:
+```make clean```
